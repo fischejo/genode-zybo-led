@@ -71,7 +71,7 @@ make -C build_zybo/ run/led
 6. Load `design_1_wrapper.bit` into FPGA
    ```
    set env "loadbit_addr 0x100000"
-   fatload mmc 0:1 ${loadbit_addr} led.bit; fpga loadb 0 ${loadbit_addr} 9000000
+   fatload mmc 0:1 ${loadbit_addr} design_1_wrapper.bit; fpga loadb 0 ${loadbit_addr} 9000000
    ```
 7. Load and Boot Genode
    ```
